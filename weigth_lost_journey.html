@@ -1,0 +1,22 @@
+<meta chartset="UTF-8">
+
+<script>
+	function skipLine(){
+
+		document.write("<br>");
+	}
+
+	function print(text) {
+
+		document.write(text);
+	}
+
+	var firstWeight = parseInt(prompt("What was your weight in the beginning of this Journey?"));
+	var lastWeight = parseInt(prompt ("What was your weight the last time you weighted yourself?"));
+
+	print("<h1>My Weight Loss Journey:</h1>");
+	print("<h2>My Weight When I Started: " + firstWeight + " kg</h2>");
+	print("<h2>My Weight Now: " + lastWeight + "kg</h2>");
+	print("<h3>How much I changed: " + Math.round(firstWeight - lastWeight) + " kg</h3>");
+
+</script>
